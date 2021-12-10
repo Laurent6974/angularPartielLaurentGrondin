@@ -9,10 +9,14 @@ import { Statistique } from '../models/model';
 export class DisplayTabComponent implements OnInit {
 
   constructor() {
+    setTimeout((   ) => {
+ this.tabStat.push(this.stat3);
+    }, 3000);
   }
 
  stat1 = new Statistique ('s1','Stat1','ValeurStat1');
  stat2 = new Statistique ('s2','Stat2','ValeurStat2');
+ stat3 = new Statistique ('s3','Stat3','ValeurStat3');
   
 public tabStat:Statistique[] = []
 
