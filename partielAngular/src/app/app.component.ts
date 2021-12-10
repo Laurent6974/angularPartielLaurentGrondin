@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Statistique } from './models/model/model.component';
+import { Statistique } from './models/model';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,8 @@ import { Statistique } from './models/model/model.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-   stat1 = new Statistique('s1', 'statUn', 'jeSuisLaValeurDeStatUn');
-   stat2 = new Statistique('s2', 'statDeux', 'jeSuisLaValeurDeStatDeux');
-}
+   stat1 = new Statistique ('s1','Stat1','ValeurStat1')
+   stat2 = new Statistique ('s2','Stat2','ValeurStat2')
+    tabStat:Statistique[]= [this.stat1,this.stat2]
+    displaytab = JSON.stringify(this.tabStat)
+  }

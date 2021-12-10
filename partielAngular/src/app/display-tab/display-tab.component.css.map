@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "display-tab.component.scss"
+    ],
+    "names": [],
+    "file": "display-tab.component.css"
+}
