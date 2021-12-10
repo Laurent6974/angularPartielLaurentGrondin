@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Statistique } from '../models/model';
 
 @Component({
@@ -23,6 +23,12 @@ public tabStat:Statistique[] = []
   ngOnInit(): void {
     this.tabStat.push(this.stat1);
     this.tabStat.push(this.stat2);
+  }
+
+
+deleteStat (stat: Statistique) {
+    let index = this.tabStat.indexOf(stat)
+    this.tabStat.splice(index, 1)
   }
 
 }
